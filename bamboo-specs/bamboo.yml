@@ -1,0 +1,21 @@
+version: 2
+
+plan:
+  project-key: TEST
+  key: SIM
+  name: Simple Pipeline
+
+stages:
+  - Stage 1:
+      jobs:
+        - Job 1
+
+jobs:
+  - Job 1:
+      key: JOB1
+      tasks:
+        - script:
+            description: Print Hello World
+            scripts:
+              - echo "Hello, Bamboo!"
+
